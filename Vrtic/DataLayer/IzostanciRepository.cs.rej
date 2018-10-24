@@ -1,0 +1,10 @@
+diff a/Vrtic/DataLayer/IzostanciRepository.cs b/Vrtic/DataLayer/IzostanciRepository.cs	(rejected hunks)
+@@ -32,7 +32,7 @@
+ 
+                 SqlCommand command = new SqlCommand();
+                 command.Connection = dataConnection;
+-                command.CommandText = "SELECT * FROM Deca";
++                command.CommandText = "SELECT * FROM Izostanci";
+ 
+                 SqlDataReader dataReader = command.ExecuteReader();
+ 

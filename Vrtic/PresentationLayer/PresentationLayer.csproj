@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CAB28DE5-D935-4FD7-8A9C-F75F78B16CBF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PresentationLayer</RootNamespace>
+    <AssemblyName>PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmChildren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChildren.Designer.cs">
+      <DependentUpon>frmChildren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTwoParameterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTwoParameterView.Designer.cs">
+      <DependentUpon>frmTwoParameterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTwoParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTwoParameters.Designer.cs">
+      <DependentUpon>frmTwoParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTextSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTextSearch.Designer.cs">
+      <DependentUpon>frmTextSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuestion.Designer.cs">
+      <DependentUpon>frmQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDataChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataChange.Designer.cs">
+      <DependentUpon>frmDataChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbsences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbsences.Designer.cs">
+      <DependentUpon>frmAbsences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChildrenView.cs" />
+    <Compile Include="Models\TeachersView.cs" />
+    <Compile Include="frmSections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSections.Designer.cs">
+      <DependentUpon>frmSections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTwoParametresQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTwoParametresQuestion.Designer.cs">
+      <DependentUpon>frmTwoParametresQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViews.Designer.cs">
+      <DependentUpon>frmViews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNoParameterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoParameterView.Designer.cs">
+      <DependentUpon>frmNoParameterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOneParameterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOneParameterView.Designer.cs">
+      <DependentUpon>frmOneParameterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmSeminars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeminars.Designer.cs">
+      <DependentUpon>frmSeminars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRooms.Designer.cs">
+      <DependentUpon>frmRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTeachers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeachers.Designer.cs">
+      <DependentUpon>frmTeachers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmChildren.resx">
+      <DependentUpon>frmChildren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTwoParameterView.resx">
+      <DependentUpon>frmTwoParameterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTwoParameters.resx">
+      <DependentUpon>frmTwoParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTextSearch.resx">
+      <DependentUpon>frmTextSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion.resx">
+      <DependentUpon>frmQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDataChange.resx">
+      <DependentUpon>frmDataChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbsences.resx">
+      <DependentUpon>frmAbsences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSections.resx">
+      <DependentUpon>frmSections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTwoParametresQuestion.resx">
+      <DependentUpon>frmTwoParametresQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViews.resx">
+      <DependentUpon>frmViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoParameterView.resx">
+      <DependentUpon>frmNoParameterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOneParameterView.resx">
+      <DependentUpon>frmOneParameterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmSeminars.resx">
+      <DependentUpon>frmSeminars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRooms.resx">
+      <DependentUpon>frmRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeachers.resx">
+      <DependentUpon>frmTeachers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{ACBC72F9-0B71-4E48-944E-0F4BA277215C}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{C80BDEF5-5504-478C-9EF3-F53F56753451}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
